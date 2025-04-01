@@ -1,0 +1,40 @@
+.dropdown {
+  position: relative;
+}
+.dropdownBtn {
+  appearance: none;
+  font-family: 'Nunito Sans';
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: var(--white-dark-mode-text-and-light-mode-elements);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px var(--dark-gray-light-mode-Input);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: var(--white-dark-mode-text-and-light-mode-elements);
+  box-shadow: 0px 0px 3px 0px var(--dark-gray-light-mode-Input);
+  border-radius: 5px;
+  gap: 10px;
+  margin-top: 5px;
+  position: absolute;
+  padding: 15px 30px;
+  z-index: 1;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}

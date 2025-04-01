@@ -1,0 +1,82 @@
+/* nunito-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/nunito-sans-v15-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/nunito-sans-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/nunito-sans-v15-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* COLORS */
+
+  --dark-blue-dark-mode-elements: hsl(209, 23%, 22%);
+  --very-dark-blue-dark-mode-background: hsl(207, 26%, 17%);
+  --very-dark-blue-light-mode-text: hsl(200, 15%, 8%);
+  --dark-gray-light-mode-Input: hsl(0, 0%, 52%);
+  --very-light-gray-light-mode-background: hsl(0, 0%, 98%);
+  --white-dark-mode-text-and-light-mode-elements: hsl(0, 0%, 100%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans';
+  background-color: var(--very-light-gray-light-mode-background);
+}
+
+.inner-wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.fake-dark-mode {
+  filter: invert(83%);
+  transition: all 0.5s;
+}
+
+.fake-dark-mode img {
+  filter: invert(100%);
+}
+
+span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-fake-dark-mode {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}

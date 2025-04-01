@@ -1,0 +1,77 @@
+section {
+  padding-block: 60px;
+}
+
+.gridList {
+  text-decoration: none;
+  color: var(--very-dark-blue-light-mode-text);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: var(--white-dark-mode-text-and-light-mode-elements);
+  box-shadow: 0px 0px 10px 0px var(--dark-gray-light-mode-Input);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gridItem {
+  display: grid;
+  gap: 25px;
+  margin-block: 30px;
+  margin-inline: 30px;
+}
+
+img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+.data {
+  padding-block: 20px;
+  padding-inline: 25px;
+}
+.para {
+  font-size: 1.25rem;
+}
+
+.loading,
+.error,
+.noCountries {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-block: 50px;
+}
+
+Link {
+  text-decoration: none;
+  color: inherit; /* Keeps the default text color */
+  display: block; /* Makes the whole div clickable */
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .gridItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .gridItem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 40px;
+  }
+  .gridList:hover {
+    transform: scale(1.1);
+  }
+}

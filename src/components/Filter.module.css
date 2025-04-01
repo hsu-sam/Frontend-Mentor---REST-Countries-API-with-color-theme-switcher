@@ -1,0 +1,28 @@
+.select {
+  font-family: 'Nunito Sans';
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0px 0px 4px 1px var(--dark-gray-light-mode-Input);
+  border-radius: 5px;
+  appearance: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-inline: 40px;
+}
+
+option {
+  font-family: 'Nunito Sans';
+  background-color: var(--white-dark-mode-text-and-light-mode-elements);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 4px 1px var(--dark-gray-light-mode-Input);
+}
