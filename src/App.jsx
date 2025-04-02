@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div className="inner-wrap">
-      <Header isFakeDark={isFakeDark} setIsFakeDark={setIsFakeDark} />
       <BrowserRouter>
+        <Header isFakeDark={isFakeDark} setIsFakeDark={setIsFakeDark} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="countries" element={<HomePage />} />

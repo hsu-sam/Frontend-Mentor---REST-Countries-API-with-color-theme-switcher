@@ -6,6 +6,11 @@
   margin-inline: 30px;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--very-dark-blue-light-mode-text);
+}
+
 .button {
   appearance: none;
   background-color: transparent;

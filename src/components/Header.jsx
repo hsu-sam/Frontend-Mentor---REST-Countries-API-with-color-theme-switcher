@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 function Header({ isFakeDark, setIsFakeDark }) {
   return (
     <header className={styles.header}>
-      <h3>Where in the world?</h3>
+      <h3>
+        <Link to="/" className={styles.link}>
+          Where in the world?
+        </Link>
+      </h3>
 
       <button
         onClick={() => setIsFakeDark((isFakeDark) => !isFakeDark)}
